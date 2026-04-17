@@ -1,0 +1,201 @@
+<HTML><HEAD>
+	<TITLE><sin_titulo></TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS2">// Validar si una dato es de tipo entero</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_tipo_entero</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"0"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"9"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+</SPAN><SPAN class="SS2">// Validar si una dato es de tipo decimal</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">Funcion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_tipo_real</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">puntos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">puntos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Longitud</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Subcadena</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"."</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">puntos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">puntos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">puntos</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"0"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">caracter</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"9"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">texto</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"."</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS11">resultado</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinFuncion</SPAN><SPAN class="SS0">
+
+
+</SPAN><SPAN class="SS5">Algoritmo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Registro_Clasificacion_Estudiantes</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opcion_calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Cadena</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Real</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Logico</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Falso</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Escriba la palabra salir en cualquier momento para cerrar el programa."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS2">// Solicitar cantidad de estudiantes</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingrese la cantidad de estudiantes:"</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Minusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"salir"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_tipo_entero</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">ConvertirANumero</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS5">opcion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La cantidad debe ser mayor que 0."</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Debe ingresar un numero entero valido."</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0">
+    
+    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Programa finalizado."</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+        
+        </SPAN><SPAN class="SS5">Para</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Con</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Paso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Estudiante "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS2">// Solicitar nombre del estudiante</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingrese el nombre del estudiante:"</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Minusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"salir"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"El nombre no puede estar vacio."</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≠</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0">
+            
+            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Programa finalizado."</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS2">// Solicitar calificacion al usuario</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Repetir</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Ingrese la calificacion (0 a 10):"</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">opcion_calificacion</SPAN><SPAN class="SS0">
+                    
+                    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">Minusculas</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">opcion_calificacion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">=</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"salir"</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Verdadero</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">validar_tipo_real</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">opcion_calificacion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS16">ConvertirANumero</SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">opcion_calificacion</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0">
+                            
+                            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&lt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">&gt;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">10</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"La calificacion debe estar entre 0 y 10."</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Debe ingresar un numero valido."</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS5">Hasta</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Que</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Y</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">10</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">O</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0">
+                
+                </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">salir_programa</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">""</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Programa finalizado."</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">cantidad</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                    
+                    </SPAN><SPAN class="SS2">// Clasificacion segun la calificacion</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">9</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Excelente"</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">7</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Muy bien"</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS5">Si</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">calificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≥</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">5</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entonces</SPAN><SPAN class="SS0">
+                                </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Bien"</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS5">SiNo</SPAN><SPAN class="SS0">
+                                </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Insuficiente"</SPAN><SPAN class="SS0">
+                            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                        </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                    
+                    </SPAN><SPAN class="SS2">// Mostrar resultado de cada estudieante</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Nombre: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">nombre</SPAN><SPAN class="SS0">
+                    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">"Clasificacion: "</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">clasificacion</SPAN><SPAN class="SS0">
+                    
+                </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+                
+            </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+            
+        </SPAN><SPAN class="SS5">FinPara</SPAN><SPAN class="SS0">
+        
+    </SPAN><SPAN class="SS5">FinSi</SPAN><SPAN class="SS0">
+    
+</SPAN><SPAN class="SS5">FinAlgoritmo</SPAN>
+</PRE></BODY></HTML>

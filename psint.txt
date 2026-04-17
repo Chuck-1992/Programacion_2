@@ -1,0 +1,172 @@
+// Validar si una dato es de tipo entero
+Funcion resultado <- validar_tipo_entero(texto)
+    Definir i Como Entero
+    Definir caracter Como Cadena
+	
+    resultado <- Verdadero
+	
+    Si Longitud(texto) = 0 Entonces
+        resultado <- Falso
+    SiNo
+        Para i <- 1 Hasta Longitud(texto) Con Paso 1 Hacer
+            caracter <- Subcadena(texto, i, i)
+			
+            Si caracter < "0" O caracter > "9" Entonces
+                resultado <- Falso
+            FinSi
+        FinPara
+    FinSi
+FinFuncion
+
+// Validar si una dato es de tipo decimal
+Funcion resultado <- validar_tipo_real(texto)
+    Definir i, puntos Como Entero
+    Definir caracter Como Cadena
+	
+    resultado <- Verdadero
+    puntos <- 0
+	
+    Si Longitud(texto) = 0 Entonces
+        resultado <- Falso
+    SiNo
+        Para i <- 1 Hasta Longitud(texto) Con Paso 1 Hacer
+            caracter <- Subcadena(texto, i, i)
+			
+            Si caracter = "." Entonces
+                puntos <- puntos + 1
+                Si puntos > 1 Entonces
+                    resultado <- Falso
+                FinSi
+            SiNo
+                Si caracter < "0" O caracter > "9" Entonces
+                    resultado <- Falso
+                FinSi
+            FinSi
+        FinPara
+    FinSi
+	
+    Si texto = "." Entonces
+        resultado <- Falso
+    FinSi
+FinFuncion
+
+
+Algoritmo Registro_Clasificacion_Estudiantes
+	
+    Definir cantidad, i Como Entero
+    Definir nombre, clasificacion, opcion, opcion_calificacion Como Cadena
+    Definir calificacion Como Real
+    Definir salir_programa Como Logico
+	
+    salir_programa <- Falso
+    cantidad <- 0
+	
+    Escribir "Escriba la palabra salir en cualquier momento para cerrar el programa."
+    Escribir ""
+	
+    // Solicitar cantidad de estudiantes
+    Repetir
+        Escribir "Ingrese la cantidad de estudiantes:"
+        Leer opcion
+		
+        Si Minusculas(opcion) = "salir" Entonces
+            salir_programa <- Verdadero
+        SiNo
+            Si validar_tipo_entero(opcion) Entonces
+                cantidad <- ConvertirANumero(opcion)
+				
+                Si cantidad <= 0 Entonces
+                    Escribir "La cantidad debe ser mayor que 0."
+                FinSi
+            SiNo
+                Escribir "Debe ingresar un numero entero valido."
+            FinSi
+        FinSi
+		
+    Hasta Que cantidad > 0 O salir_programa
+	
+    Si salir_programa Entonces
+        Escribir ""
+        Escribir "Programa finalizado."
+    SiNo
+		
+        Para i <- 1 Hasta cantidad Con Paso 1 Hacer
+			
+            Escribir ""
+            Escribir "Estudiante ", i
+			
+            // Solicitar nombre del estudiante
+            Repetir
+                Escribir "Ingrese el nombre del estudiante:"
+                Leer nombre
+				
+                Si Minusculas(nombre) = "salir" Entonces
+                    salir_programa <- Verdadero
+                SiNo
+                    Si nombre = "" Entonces
+                        Escribir "El nombre no puede estar vacio."
+                    FinSi
+                FinSi
+            Hasta Que nombre <> "" O salir_programa
+			
+            Si salir_programa Entonces
+                Escribir ""
+                Escribir "Programa finalizado."
+                i <- cantidad
+            SiNo
+				
+                // Solicitar calificacion al usuario
+                Repetir
+                    Escribir "Ingrese la calificacion (0 a 10):"
+                    Leer opcion_calificacion
+					
+                    Si Minusculas(opcion_calificacion) = "salir" Entonces
+                        salir_programa <- Verdadero
+                    SiNo
+                        Si validar_tipo_real(opcion_calificacion) Entonces
+                            calificacion <- ConvertirANumero(opcion_calificacion)
+							
+                            Si calificacion < 0 O calificacion > 10 Entonces
+                                Escribir "La calificacion debe estar entre 0 y 10."
+                            FinSi
+                        SiNo
+                            Escribir "Debe ingresar un numero valido."
+                        FinSi
+                    FinSi
+					
+                Hasta Que (calificacion >= 0 Y calificacion <= 10) O salir_programa
+				
+                Si salir_programa Entonces
+                    Escribir ""
+                    Escribir "Programa finalizado."
+                    i <- cantidad
+                SiNo
+					
+                    // Clasificacion segun la calificacion
+                    Si calificacion >= 9 Entonces
+                        clasificacion <- "Excelente"
+                    SiNo
+                        Si calificacion >= 7 Entonces
+                            clasificacion <- "Muy bien"
+                        SiNo
+                            Si calificacion >= 5 Entonces
+                                clasificacion <- "Bien"
+                            SiNo
+                                clasificacion <- "Insuficiente"
+                            FinSi
+                        FinSi
+                    FinSi
+					
+                    // Mostrar resultado de cada estudieante
+                    Escribir "Nombre: ", nombre
+                    Escribir "Clasificacion: ", clasificacion
+					
+                FinSi
+				
+            FinSi
+			
+        FinPara
+		
+    FinSi
+	
+FinAlgoritmo
