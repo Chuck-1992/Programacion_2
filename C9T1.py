@@ -1,5 +1,5 @@
 # ******************************************************************************************
-# Calculadora básica en Python
+# Clasificación de Estudiantes en Python
 # Programa interactivo para registrar y clasificar calificaciones de estudiantes
 # ******************************************************************************************
 
